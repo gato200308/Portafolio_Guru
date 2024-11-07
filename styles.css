@@ -1,0 +1,38 @@
+/* Portafolio y secciones de semestres */
+.portafolio, .semestre {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #3a3737; /* Fondo igual al body */
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Ajusta el ancho según necesites */
+}
+
+.portafolio h2, .semestre h2 {
+    font-size: 2rem;
+    color: #ddd590; /* Color del encabezado */
+}
+
+.imagenes-portafolio, .imagenes-semestre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagenes-portafolio img, .imagenes-semestre img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Para adaptabilidad en pantallas pequeñas */
+@media (max-width: 768px) {
+    .imagenes-portafolio img, .imagenes-semestre img {
+        width: 100%;
+        height: auto;
+    }
+}
